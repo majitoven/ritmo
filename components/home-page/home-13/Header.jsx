@@ -37,6 +37,7 @@ const Header = () => {
               <Image
                 src="/images/logo/ritmoPalabra.png"
                 alt="logo"
+                className="header-logo"
                 width={200}
                 height={50}
               />

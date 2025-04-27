@@ -101,6 +101,7 @@ const NotFound = () => {
                     <Image
                       src="/images/logo/ritmoPalabra.png"
                       alt="logo"
+                      className="header-logo"
                       width={300}
                       height={80}
                     />

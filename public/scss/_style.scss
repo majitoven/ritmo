@@ -10472,6 +10472,7 @@ body .btn-twentySix:hover:after {
   top: 65%;
   left: 72%;
 }
+
 .testimonial-grid {
   display: grid;
   gap: 32px;
@@ -10482,6 +10483,10 @@ body .btn-twentySix:hover:after {
   padding: 40px;
   border-radius: 16px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Ensure the card doesn't overflow and wraps content */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Hover effect */
@@ -10490,10 +10495,51 @@ body .btn-twentySix:hover:after {
   box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
 }
 
-/* Mobile */
+/* Mobile adjustments */
 @media (max-width: 768px) {
   .testimonial-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Single column for mobile */
+  }
+
+  .testimonial-card {
+    padding: 20px; /* Reduce padding for smaller screens */
+    min-height: auto; /* Allow the card to shrink based on content */
+
+      /* Adjust font sizes and margins for mobile */
+
+
+    .tx-dark {
+      font-size: 18px !important; /* Reduce description size */
+      margin-top: 20px !important; /* Adjust margins */
+      margin-bottom: 30px !important;
+      text-align: center;
+      margin-top: 0 !important;
+    }
+
+    .cmp-name {
+      font-size: 36px !important; /* Reduce title size */
+      margin-bottom: 0px !important;
+      text-align: center;
+    }
+
+    .subtitle-block {
+      font-size: 20px !important; /* Reduce subtitle size */
+      padding: 2px 5px !important;
+      text-align: center;
+      width: auto !important;
+    }
+  
+  }
+
+}
+
+/* Default logo size (desktop) is already set to 200x50 via Image props */
+
+/* Mobile adjustments for the header logo */
+@media (max-width: 768px) {
+  .header-logo {
+    width: 160px !important; /* Override width for mobile */
+    height: 40px !important; /* Override height for mobile */
   }
 }
 
@@ -10563,4 +10609,14 @@ body .btn-twentySix:hover:after {
 .float-image-diagonal {
   animation: floatDiagonal 3s ease-in-out infinite;
   display: inline-block;
+}
+
+.contactanos-text {
+  font-size: 88px;
+}
+
+@media (max-width: 767px) {
+  .contactanos-text {
+    font-size: 50px !important;
+  }
 }

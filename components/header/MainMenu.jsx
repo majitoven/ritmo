@@ -31,8 +31,8 @@ const MainMenu = () => {
               <Image
                 src="/images/logo/ritmoPalabra.png"
                 alt="logo"
-                width={150}
-                height={50}
+                width={160} // Updated width to 160
+                height={40} // Updated height to 40
               />
             </Link>
           </li>

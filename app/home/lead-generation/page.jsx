@@ -337,56 +337,45 @@ const LeadGeneration = () => {
         <div className="shapes shape-one" />
       </div> */}
 
-
-<div className="fancy-short-banner-five mt-110" id="s5" >
-        <div id="contacto" className="bg-wrapper position-relative pt-180 pb-140 lg-pt-80 lg-pb-80" style={{background: 'rgb(240 255 97 / 86%)'}}>
-          <img
-            src="/images/shape/shape_68.svg"
-            alt="shape"
-            className="lazy-img shapes shape-one"
-          />
-          <img
-            src="/images/shape/shape_69.svg"
-            alt="shape"
-            className="lazy-img shapes shape-two"
-          />
-          <img
-            src="/images/shape/shape_70.svg"
-            alt="shape"
-            className="lazy-img shapes shape-three"
-          />
-          <div className="r-shape-one position-absolute" />
-          <div className="container">
-            <div
-              className="innner-content bg-white position-relative"
-              data-aos="fade-up"
-            >
-              <div className="r-shape-two rounded-circle position-absolute" />
-              <div className="row align-items-center">
-                <div className="col-lg-5">
-                  <h2 className="title-xl font-recoleta fw-500 tx-dark">
-                    ¿Tenés consultas?
-                    <span className="d-inline-block position-relative" style={{fontSize: '88px'}}>
-                      Contactanos.
-                    </span>
-                  </h2>
-                  <p className="text-lg mt-35 md-mt-20">
-                    Envianos un mensaje y nos contactaremos a la brevedad.
-                  </p>
-                </div>
-                <div className="col-lg-6 ms-auto">
-                  <div className="form-style-one md-mt-40">
-                    <ContactForm />
-                  </div>
-                  {/* /.form-style-one */}
-                </div>
-              </div>
+<div className="fancy-short-banner-five mt-110" id="s5">
+  <div id="contacto" className="bg-wrapper position-relative pt-180 pb-140 lg-pt-80 lg-pb-80" style={{ background: "rgb(240 255 97 / 86%)" }}>
+    <img src="/images/shape/shape_68.svg" alt="shape" className="lazy-img shapes shape-one" />
+    <img src="/images/shape/shape_69.svg" alt="shape" className="lazy-img shapes shape-two" />
+    <img src="/images/shape/shape_70.svg" alt="shape" className="lazy-img shapes shape-three" />
+    <div className="r-shape-one position-absolute" />
+    <div className="container">
+      <div className="innner-content bg-white position-relative" data-aos="fade-up">
+        <div className="r-shape-two rounded-circle position-absolute" />
+        <div className="row align-items-center">
+          <div className="col-lg-5">
+            <h2 className="title-xl font-recoleta fw-500 tx-dark">
+              ¿Tenés consultas?
+              <span
+                className="d-inline-block position-relative"
+                style={{
+                  fontSize: "88px",
+                }}
+              >
+                <span className="contactanos-text">Contactanos.</span>
+              </span>
+            </h2>
+            <p className="text-lg mt-35 md-mt-20">
+              Envianos un mensaje y nos contactaremos a la brevedad.
+            </p>
+          </div>
+          <div className="col-lg-6 ms-auto">
+            <div className="form-style-one md-mt-40">
+              <ContactForm />
             </div>
-            {/* /.innner-content */}
           </div>
         </div>
-        {/* /.bg-wrapper */}
       </div>
+    </div>
+  </div>
+</div>
+
+
+
       {/* /.fancy-short-banner-twelve */}
       {/*
         =====================================================
@@ -402,6 +391,7 @@ const LeadGeneration = () => {
                   <Link href="/">
                     <Image
                       src="/images/logo/ritmoPalabra.png"
+                      className="header-logo"
                       alt="logo"
                       width={300}
                       height={80}

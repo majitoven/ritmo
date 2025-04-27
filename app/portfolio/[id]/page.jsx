@@ -186,6 +186,7 @@ const DynamicPortfolioDetails = ({ params }) => {
                       src="/images/logo/ritmoPalabra.png"
                       alt="logo"
                       width={300}
+                      className="header-logo"
                       height={80}
                     />
                   </Link>

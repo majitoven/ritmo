@@ -69,13 +69,14 @@ const Testimonial = () => {
                 borderRadius: "8px",
                 display: "inline-block",
                 color: "#000",
+                width: 'fit-content'
               }}
             >
               {service.subtitle}
             </div>
 
             <p
-              className="tx-dark mt-40 mb-70 lg-mt-30 lg-mb-50"
+              className="tx-dark mb-20 lg-mt-20 lg-mb-20"
               style={{ fontSize: "22px" }}
             >
               {service.description}
