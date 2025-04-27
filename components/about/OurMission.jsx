@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 
@@ -5,17 +7,16 @@ const OurMission = () => {
   return (
     <>
       <div className="row align-items-end">
-      <div className="col-sm-6">
+        <div className="col-sm-6">
           <div className="img-meta position-relative mb-50">
             <Image
               width={648}
               height={436}
               style={{ objectFit: "cover" }}
-              src="/images/media/img_100.jpg"
+              src="/images/media/gallery/1.png"
               alt="media"
               className="lazy-img w-100"
             />
-            {/* /.customer-data */}
           </div>
         </div>
 
@@ -27,7 +28,7 @@ const OurMission = () => {
                   width={312}
                   height={332}
                   style={{ objectFit: "cover" }}
-                  src="/images/media/img_97.jpg"
+                  src="/images/media/gallery/3.png"
                   alt="media"
                   className="lazy-img w-100"
                 />
@@ -39,35 +40,40 @@ const OurMission = () => {
                   width={312}
                   height={403}
                   style={{ objectFit: "cover" }}
-                  src="/images/media/img_98.jpg"
+                  src="/images/media/gallery/5.png"
                   alt="media"
                   className="lazy-img w-100"
                 />
+                {/* Replacing rating block with an image */}
                 <div
-                  className="rating d-flex flex-column align-items-center justify-content-center"
+                  className="rating d-flex flex-column align-items-center justify-content-center rotate-image"
                   data-aos="fade-up"
-                  style={{background: '#D97532'}}
+                  style={{ background: "transparent", width: 150, height: 150  }}
                 >
-                  <div className="font-recoleta tx-dark rating-value"></div>
-                  <div className="fs-18 tx-dark"></div>
+                  <Image
+                    width={200}
+                    height={200}
+                    src="/images/shape/1.png"
+                    alt="Rating Shape"
+                    className="lazy-img"
+                  />
                 </div>
-                {/* /.rating */}
-              </div>{" "}
-              {/* /.img-meta */}
+              </div>
             </div>
           </div>
         </div>
         {/* End .col */}
       </div>
       {/* End .row */}
+
       <div className="row justify-content-end" data-aos="fade-up">
         <div className="col-sm-4">
           <div className="img-meta mb-50 lg-mb-40">
             <Image
-              width={424}
-              height={295}
+               width={648}
+               height={436}
               style={{ objectFit: "cover" }}
-              src="/images/media/img_99.jpg"
+              src="/images/media/gallery/4.png"
               alt="media"
               className="lazy-img w-100"
             />
@@ -79,20 +85,24 @@ const OurMission = () => {
               width={648}
               height={436}
               style={{ objectFit: "cover" }}
-              src="/images/media/img_100.jpg"
+              src="/images/media/gallery/2.png"
               alt="media"
               className="lazy-img w-100"
             />
+            {/* Replacing customer-data block with another image */}
             <div
-              className="customer-data d-flex flex-column align-items-center justify-content-center"
+              className="customer-data d-flex flex-column align-items-center justify-content-center rotate-image"
               data-aos="fade-up"
-              style={{background: '#F0FF61'}}
-
-            >
-              <div className="fw-500 tx-dark amount"></div>
-              <div className="fs-18 tx-dark"></div>
-            </div>{" "}
-            {/* /.customer-data */}
+              style={{ background: "transparent", width: 150, height: 150  }}
+              >
+              <Image
+                width={200}
+                height={200}
+                src="/images/shape/2.png"
+                alt="Customer Shape"
+                className="lazy-img"
+              />
+            </div>
           </div>
         </div>
       </div>
