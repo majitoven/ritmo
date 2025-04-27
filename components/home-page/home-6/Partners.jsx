@@ -1,85 +1,88 @@
+"use client";
+
+import React from "react";
+
 const Partners = () => {
   const partnersData = [
     {
-      imgSrc: "/images/logo/p-1.png",
+      imgSrc: "/images/clientes/1.png",
       imgAlt: "logo",
-      divClass: "img-box bx-a",
       link: "#",
       colClasses: "col-lg-3 col-md-4 col-6",
       dataAos: "fade",
       dataAosDelay: "100",
     },
     {
-      imgSrc: "/images/logo/p-2.png",
+      imgSrc: "/images/clientes/2.png",
       imgAlt: "logo",
-      divClass: "img-box bx-b",
       link: "#",
       colClasses: "col-xl-2 col-lg-3 col-md-4 col-6",
       dataAos: "fade",
       dataAosDelay: "200",
     },
     {
-      imgSrc: "/images/logo/p-3.png",
+      imgSrc: "/images/clientes/3.png",
       imgAlt: "logo",
-      divClass: "img-box bx-c",
       link: "#",
       colClasses: "col-lg-3 col-md-4 col-6",
       dataAos: "fade",
       dataAosDelay: "300",
     },
     {
-      imgSrc: "/images/logo/p-4.png",
+      imgSrc: "/images/clientes/4.png",
       imgAlt: "logo",
-      divClass: "img-box bx-d",
-      link: "#",
-      colClasses: "col-xl-2 col-lg-3 col-md-4 col-6",
-      dataAos: "fade",
-      dataAosDelay: "300",
-    },
-    {
-      imgSrc: "/images/logo/p-5.png",
-      imgAlt: "logo",
-      divClass: "img-box bx-e",
       link: "#",
       colClasses: "col-xl-2 col-lg-3 col-md-4 col-6",
       dataAos: "fade",
       dataAosDelay: "400",
     },
     {
-      imgSrc: "/images/logo/p-6.png",
+      imgSrc: "/images/clientes/5.png",
       imgAlt: "logo",
-      divClass: "img-box bx-f",
       link: "#",
-      colClasses: "col-xl-4 col-lg-2 col-md-4 col-6",
+      colClasses: "col-xl-2 col-lg-3 col-md-4 col-6",
       dataAos: "fade",
       dataAosDelay: "500",
     },
     {
-      imgSrc: "/images/logo/p-7.png",
+      imgSrc: "/images/clientes/6.png",
       imgAlt: "logo",
-      divClass: "img-box bx-g",
       link: "#",
-      colClasses: "col-xl-2 col-lg-3 col-md-4 col-6",
+      colClasses: "col-xl-4 col-lg-2 col-md-4 col-6",
       dataAos: "fade",
       dataAosDelay: "600",
     },
     {
-      imgSrc: "/images/logo/p-8.png",
+      imgSrc: "/images/clientes/7.png",
       imgAlt: "logo",
-      divClass: "img-box bx-h",
       link: "#",
-      colClasses: "col-xl-3 col-lg-3 col-md-4 col-6",
+      colClasses: "col-xl-2 col-lg-3 col-md-4 col-6",
       dataAos: "fade",
       dataAosDelay: "700",
     },
     {
-      imgSrc: "/images/logo/p-9.png",
+      imgSrc: "/images/clientes/8.png",
       imgAlt: "logo",
-      divClass: "img-box bx-i",
+      link: "#",
+      colClasses: "col-xl-3 col-lg-3 col-md-4 col-6",
+      dataAos: "fade",
+      dataAosDelay: "800",
+    },
+    {
+      imgSrc: "/images/clientes/9.png",
+      imgAlt: "logo",
       link: "#",
       colClasses: "col-xl-3 col-lg-12 col-md-4 col-6 m-auto",
       dataAos: "fade",
-      dataAosDelay: "800",
+      dataAosDelay: "900",
+    },
+    {
+      imgSrc: "/images/clientes/10.png",
+      imgAlt: "logo",
+      link: "#",
+      colClasses: "col-xl-3 col-lg-12 col-md-4 col-6 m-auto",
+      dataAos: "fade",
+      dataAosDelay: "1000",
     },
   ];
 
@@ -92,12 +95,31 @@ const Partners = () => {
           data-aos={partner.dataAos}
           data-aos-delay={partner.dataAosDelay}
         >
-          <div className={`img-box ${partner.className}`}>
-            <a href="#">
-              <img src={partner.imgSrc} alt="logo" className="lazy-img" />
+          <div
+            className="img-box d-flex align-items-center justify-content-center"
+            style={{
+              width: "150px",
+              height: "150px",
+              borderRadius: "50%",
+              background: "#ffffff",
+              boxShadow: "0 0 20px rgba(0,0,0,0.05)",
+              margin: "auto",
+              overflow: "hidden",
+            }}
+          >
+            <a href={partner.link}>
+              <img
+                src={partner.imgSrc}
+                alt={partner.imgAlt}
+                className="lazy-img"
+                style={{
+                  width: "80%",
+                  height: "80%",
+                  objectFit: "contain",
+                }}
+              />
             </a>
           </div>
-          {/* /.img-box */}
         </div>
       ))}
     </div>
