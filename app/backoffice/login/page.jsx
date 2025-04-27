@@ -51,7 +51,7 @@ const Login = () => {
               </h2>
               <form onSubmit={handleSubmit} className="user-data-form mt-40 lg-mt-30">
                 <div className="input-group-meta mb-30">
-                  <label>Email</label>
+                  <label style={{marginRight: '10px'}}>Email</label>
                   <input 
                     type="email" 
                     placeholder="admin@ritmo.com" 
@@ -62,7 +62,7 @@ const Login = () => {
                 </div>
 
                 <div className="input-group-meta mb-25">
-                  <label>Contraseña</label>
+                <label style={{marginRight: '10px'}}>Contraseña</label>
                   <input
                     type="password"
                     placeholder="••••••••"
