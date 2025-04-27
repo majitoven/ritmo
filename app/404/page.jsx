@@ -6,10 +6,6 @@ import CopyrightFooter from "@/components/home-page/home-13/CopyrightFooter";
 import Link from "next/link";
 import Image from "next/image";
 
-export const metadata = {
-  title: "Página no encontrada || Ritmo Eventos",
-};
-
 const NotFound = () => {
   return (
     <>
