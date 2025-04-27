@@ -290,7 +290,7 @@ const ProjectManagement = () => {
               onChange={(e) =>
                 setNewProject({ ...newProject, category: e.target.value })
               }
-              placeholder="Categoría (ej. event)"
+              placeholder="Categoría (ej. Evento corporativo)"
               required
               style={{
                 width: "100%",
