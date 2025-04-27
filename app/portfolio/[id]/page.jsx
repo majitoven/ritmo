@@ -98,64 +98,7 @@ const DynamicPortfolioDetails = ({ params }) => {
             </div>
             {/* End col-xl-9 */}
 
-            <div className="project-pagination m-auto pt-100 lg-pt-50 sm-pt-10">
-              <div className="row gx-xxl-5">
-                <div className="col-sm-6">
-                  <div
-                    className="arrow-block position-relative zn2 mt-20"
-                    data-aos="fade-right"
-                  >
-                    <img
-                      src="/images/media/img_92.jpg"
-                      alt="media"
-                      className="lazy-img w-100"
-                    />
-                    <div className="hover-content tran3s position-absolute d-flex flex-column align-items-center justify-content-center">
-                      <div className="text-white fw-500 pg-title">
-                        Anterior
-                      </div>
-                      <a
-                        href="#"
-                        className="arrow rounded-circle text-center tran3s"
-                      >
-                        <i className="bi bi-arrow-left" />
-                      </a>
-                    </div>
-                    {/* /.hover-content */}
-                  </div>
-                  {/* /.arrow-block */}
-                </div>
-                {/* End .col-6 */}
-
-                <div className="col-sm-6">
-                  <div
-                    className="arrow-block position-relative zn2 mt-20"
-                    data-aos="fade-left"
-                  >
-                    <img
-                      src="/images/media/img_93.jpg"
-                      alt="media"
-                      className="lazy-img w-100"
-                    />
-                    <div className="hover-content tran3s position-absolute d-flex flex-column align-items-center justify-content-center">
-                      <div className="text-white fw-500 pg-title">
-                        Ver siguiente
-                      </div>
-                      <a
-                        href="#"
-                        className="arrow rounded-circle text-center tran3s"
-                      >
-                        <i className="bi bi-arrow-right" />
-                      </a>
-                    </div>
-                    {/* /.hover-content */}
-                  </div>
-                  {/* /.arrow-block */}
-                </div>
-                {/* End .col-6 */}
-              </div>
-              {/* End .row */}
-            </div>
+       
             {/* /.project-pagination */}
           </div>
           {/* End .container */}
