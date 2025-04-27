@@ -5,7 +5,7 @@ const Partners = () => {
     <div className="d-flex flex-wrap justify-content-center align-items-center">
       {/* Frase 1: Siempre visible */}
       <h3 className="title tx-dark d-flex justify-content-center align-items-center m-3">
-        <span className="fw-bold">Bailemos</span>
+        <span className="fw-bold" style={{marginBottom: '10px'}}>Bailemos</span>
         <span className="font-recoleta ms-2">al mismo ritmo</span>
         <span className="ms-3 d-none d-sm-inline-block">
           <img
@@ -18,7 +18,7 @@ const Partners = () => {
 
       {/* Frase 2: Solo visible en desktop/tablet */}
       <h3 className="title tx-dark d-none d-md-flex justify-content-center align-items-center m-3">
-        <span className="fw-bold">Bailemos</span>
+        <span className="fw-bold" style={{marginBottom: '10px'}}>Bailemos</span>
         <span className="font-recoleta ms-2">al mismo ritmo</span>
         <span className="ms-3 d-none d-sm-inline-block">
           <img
@@ -31,7 +31,7 @@ const Partners = () => {
 
       {/* Frase 3: Solo visible en desktop/tablet */}
       <h3 className="title tx-dark d-none d-md-flex justify-content-center align-items-center m-3">
-        <span className="fw-bold">Bailemos</span>
+        <span className="fw-bold" style={{marginBottom: '10px'}}>Bailemos</span>
         <span className="font-recoleta ms-2">al mismo ritmo</span>
         <span className="ms-3 d-none d-sm-inline-block">
           <img
