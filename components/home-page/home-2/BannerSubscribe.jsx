@@ -2,7 +2,7 @@ import Form from "./Form";
 
 const BannerSubscribe = () => {
   return (
-    <div className="fancy-short-banner-nine lg-pt-80" data-aos="fade-up" style={{background: '#fafafa', paddingTop: '80px'}}>
+    <div id="sobre-nosotros" className="fancy-short-banner-nine lg-pt-80" data-aos="fade-up" style={{background: '#fafafa', paddingTop: '80px'}}>
       <div className="bg-wrapper position-relative pt-90 pb-110 lg-pt-50 lg-pb-60">
         <div className="container position-relative">
           <div className="row justify-content-center text-center">

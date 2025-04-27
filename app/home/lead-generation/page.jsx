@@ -37,22 +37,22 @@ const LeadGeneration = () => {
         Theme Hero Banner
         ============================================== 
         */}
-      <Hero />
+<Hero />
       {/* /.hero-banner-nine */}
       {/*
         =====================================================
         Feedback Section Eight
         =====================================================
         */}
-      <Feedback />
-      {/* /.feedback-section-eight */}
+<Feedback />
+{/* /.feedback-section-eight */}
       {/* 
         =============================================
         Feature Section Thirty
         ============================================== 
         */}
-        <BannerSubscribe />
-      {/* <Feature /> */}
+<BannerSubscribe  />
+{/* <Feature /> */}
       {/* /.fancy-feature-thirty */}
 
       {/* 
@@ -84,7 +84,7 @@ const LeadGeneration = () => {
 				Feedback Section Ten
 			============================================== 
 			*/}
-      <div className="feedback-section-ten position-relative pt-100 lg-pt-50">
+      <div id="servicios" className="feedback-section-ten position-relative pt-100 lg-pt-50">
         <div className="container">
           <div className="position-relative">
             <div className="row">
@@ -203,7 +203,7 @@ const LeadGeneration = () => {
       <PortfolioGallery1 />
 
 
-      <div className="partner-section-one position-relative mt-100 lg-mt-100">
+      <div id="clientes" className="partner-section-one position-relative mt-100 lg-mt-100">
         <div className="container">
                  <div className="row">
                          <div className="col-xl-9 col-lg-7 col-md-8 m-auto">
@@ -339,7 +339,7 @@ const LeadGeneration = () => {
 
 
 <div className="fancy-short-banner-five mt-110" id="s5" >
-        <div className="bg-wrapper position-relative pt-180 pb-140 lg-pt-80 lg-pb-80" style={{background: 'rgb(240 255 97 / 86%)'}}>
+        <div id="contacto" className="bg-wrapper position-relative pt-180 pb-140 lg-pt-80 lg-pb-80" style={{background: 'rgb(240 255 97 / 86%)'}}>
           <img
             src="/images/shape/shape_68.svg"
             alt="shape"
