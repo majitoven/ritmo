@@ -1,7 +1,6 @@
-import Insurance from "./home/insurance/page";
 import LeadGeneration from "./home/lead-generation/page";
 export const metadata = {
-  title: "Insurance || Jano - Creative Multipurpose React NextJS Template",
+  title: "Ritmo - Estudio de eventos creativo",
 };
 const MainRoot = () => {
   return <LeadGeneration />;

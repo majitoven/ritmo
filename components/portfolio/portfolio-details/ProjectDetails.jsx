@@ -1,31 +1,25 @@
+// components/portfolio/portfolio-details/ProjectDetails.jsx
 const ProjectDetails = ({ details }) => {
-  if (!details || !details.projectInfo) {
-    return null; // or a message indicating that there are no project details
+  if (!details) {
+    return null;
   }
 
   return (
     <>
       <div className="col-12 mb-35">
         <div className="pt-title fw-bold tx-dark text-uppercase">Fecha</div>
-        <div className="pt-text">{details.projectInfo.date}</div>
+        <div className="pt-text">{details.date || "Sin fecha"}</div>
       </div>
-      {/* End .col-12 */}
 
       <div className="col-12 mb-35">
-        <div className="pt-title fw-bold tx-dark text-uppercase">
-          Cliente
-        </div>
-        <div className="pt-text">{details.projectInfo.clientName}</div>
+        <div className="pt-title fw-bold tx-dark text-uppercase">Cliente</div>
+        <div className="pt-text">{details.client || "Sin cliente"}</div>
       </div>
-      {/* End .col-12 */}
 
       <div className="col-12 mb-35">
-        <div className="pt-title fw-bold tx-dark text-uppercase">
-          Categoría
-        </div>
-        <div className="pt-text">{details.projectInfo.projectType}</div>
+        <div className="pt-title fw-bold tx-dark text-uppercase">Categoría</div>
+        <div className="pt-text">{details.category || "Sin categoría"}</div>
       </div>
-      {/* End .col-12 */}
     </>
   );
 };

@@ -3,16 +3,9 @@ import React from "react";
 import Header from "@/components/home-page/home-13/Header";
 import Hero from "@/components/home-page/home-13/hero";
 import Feedback from "@/components/home-page/home-13/Feedback";
-import Feature from "@/components/home-page/home-13/Feature";
-import Leads from "@/components/home-page/home-13/Leads";
-import FeaturesBlock from "@/components/home-page/home-13/FeaturesBlock";
-import Counter from "@/components/home-page/home-13/Counter";
-import SuccessStory from "@/components/home-page/home-13/SuccessStory";
 import Testimonial from "@/components/home-page/home-13/Testimonial";
-import Faq from "@/components/home-page/home-13/Faq";
 import Link from "next/link";
 import FooterContent from "@/components/home-page/home-13/FooterContent";
-import Subscribe from "@/components/home-page/home-13/Subscribe";
 import CopyrightFooter from "@/components/home-page/home-13/CopyrightFooter";
 import Image from "next/image";
 import BannerSubscribe from "@/components/home-page/home-2/BannerSubscribe";
@@ -21,7 +14,7 @@ import PortfolioGallery1 from "@/components/portfolio/PortfolioGallery1";
 import Partners from "@/components/home-page/home-6/Partners";
 import ContactForm from "@/components/home-page/home-9/ContactForm";
 export const metadata = {
-  title: "Insurance || Jano - Creative Multipurpose React NextJS Template",
+  title: "Ritmo - Estudio de eventos creativo",
 };
 const LeadGeneration = () => {
   return (

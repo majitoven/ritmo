@@ -1,72 +1,107 @@
+// app/portfolio/[id]/page.jsx
+"use client";
+
+import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
+import { db } from "@/firebase/firebase";
+import { doc, getDoc } from "firebase/firestore";
 import Header from "@/components/home-page/home-13/Header";
-import DefaultFooter from "@/components/footer/DefaultFooter";
 import SocialShare from "@/components/portfolio/portfolio-details/SocialShare";
 import ProjectDetails from "@/components/portfolio/portfolio-details/ProjectDetails";
 import ProjectSlide from "@/components/portfolio/portfolio-details/ProjectSlide";
 import CallToAction from "@/components/portfolio/CallToAction";
 import PortfolioGallery from "@/components/portfolio/portfolio-details/PortfolioGallery";
-
-import portfolioData from "@/data/portfolio";
 import PortfolioDetailsTitle from "@/components/portfolio/portfolio-details/PortfolioDetailsTitle";
 import Link from "next/link";
 import Image from "next/image";
 import FooterContent from "@/components/home-page/home-13/FooterContent";
 import CopyrightFooter from "@/components/home-page/home-13/CopyrightFooter";
-export const metadata = {
-  title:
-    "Portfolio Details || Jano - Creative Multipurpose React NextJS Template",
-};
+
 const DynamicPortfolioDetails = ({ params }) => {
-  const id = params.id;
-  const portfolio =
-    portfolioData.find((item) => item.id == id) || portfolioData[0];
+  const { id } = params;
+  const [portfolio, setPortfolio] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const router = useRouter();
+
+  // Set the page title dynamically
+  useEffect(() => {
+    document.title = portfolio
+      ? `${portfolio.title} || Ritmo - Estudio de eventos creativo`
+      : "Ritmo - Estudio de eventos creativo";
+  }, [portfolio]);
+
+  // Fetch project data from Firestore
+  useEffect(() => {
+    const fetchProject = async () => {
+      setLoading(true);
+      try {
+        const docRef = doc(db, "projects", id);
+        const docSnap = await getDoc(docRef);
+
+        if (docSnap.exists()) {
+          setPortfolio({ id: docSnap.id, ...docSnap.data() });
+        } else {
+          // Redirect to a 404 page or homepage if project not found
+          router.push("/404");
+        }
+      } catch (error) {
+        console.error("Error fetching project:", error);
+        router.push("/404");
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchProject();
+  }, [id, router]);
+
+  if (loading) {
+    return (
+      <div
+        className="d-flex align-items-center justify-content-center"
+        style={{ minHeight: "100vh", background: "#1a1a1a" }}
+      >
+        <div className="text-center">
+          <div
+            className="spinner-border"
+            role="status"
+            style={{ color: "#5A5BFF", width: "3rem", height: "3rem" }}
+          >
+            <span className="visually-hidden">Cargando...</span>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  if (!portfolio) {
+    return null; // This won't be reached due to the redirect, but included for safety
+  }
 
   return (
     <>
-      {/* <!-- 
-      =============================================
-      Theme Default Menu
-      ============================================== 	
-      --> */}
       <Header />
 
-      {/* 
-        =============================================
-        Feature Section Fifty One
-        ============================================== 
-        */}
       <PortfolioDetailsTitle portfolio={portfolio} />
 
-      {/* 
-			=============================================
-				Portfolio Details Two
-			============================================== 
-			*/}
       <div className="portfolio-details-two pt-70 pb-50 lg-pb-10 md-pt-10">
         <div className="project-desctiption">
           <div className="container">
             <div className="row">
               <div className="col-lg-8" data-aos="fade-right">
                 <ProjectSlide slide={portfolio} />
-                {/* /#gallery-carousel */}
               </div>
-              {/* End .col-lg-8 */}
 
               <div className="col-lg-4" data-aos="fade-left">
                 <div className="sidebar ms-xl-5">
-     
                   <div className="row">
                     <ProjectDetails details={portfolio} />
                   </div>
-                  {/* End .row */}
-
                 </div>
               </div>
-              {/* End col-lg-4 */}
             </div>
-            {/* End .row */}
 
-            <div className="col-xl-9  mt-120 lg-mt-80">
+            <div className="col-xl-9 mt-120 lg-mt-80">
               <div
                 className="title-style-twelve mb-45 lg-mb-30"
                 data-aos="fade-up"
@@ -76,49 +111,16 @@ const DynamicPortfolioDetails = ({ params }) => {
                 </div>
                 <h2 className="main-title fw-500 tx-dark">Acerca del evento</h2>
               </div>
-              {/* /.title-style-twelve */}
-              <p data-aos="fade-up">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullaum laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit volupta velit esse cillum dolore eu fugiat
-                nulla pariatur.
-              </p>
-              <p data-aos="fade-up">
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                qui officia deserunt mollit anim id est laborum magna quis
-                nostured.
-              </p>
+              <p data-aos="fade-up">{portfolio.description}</p>
 
               <div className="row">
-                <PortfolioGallery />
-              </div>
-
+              <PortfolioGallery mainImage={portfolio.mainImage} gallery={portfolio.gallery} />              </div>
             </div>
-            {/* End col-xl-9 */}
-
-       
-            {/* /.project-pagination */}
           </div>
-          {/* End .container */}
         </div>
-        {/* /.project-desctiption */}
       </div>
-      {/* /.project-details */}
 
-      {/*
-			=====================================================
-				Fancy Short Banner Twelve
-			=====================================================
-			*/}
-
-      {/* 
-        =============================================
-        Contact Section One
-        ============================================== 
-        */}
-          <div className="footer-style-nine theme-basic-footer zn2 position-relative">
+      <div className="footer-style-nine theme-basic-footer zn2 position-relative">
         <div className="bg-wrapper">
           <div className="container">
             <div className="row justify-content-between">
@@ -136,13 +138,9 @@ const DynamicPortfolioDetails = ({ params }) => {
                 </div>
               </div>
               <FooterContent />
-
-
             </div>
           </div>
-          {/* /.container */}
         </div>
-        {/* /.bg-wrapper */}
 
         <CopyrightFooter />
 

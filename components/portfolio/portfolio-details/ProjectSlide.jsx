@@ -1,7 +1,17 @@
+// components/portfolio/portfolio-details/ProjectSlide.jsx
 import Image from "next/image";
 
 const ProjectSlide = ({ slide }) => {
-  const images = [slide?.image ?? "", slide?.image ?? "", slide?.image ?? ""];
+  // Combine mainImage with gallery images
+  const images = slide?.mainImage
+    ? [slide.mainImage, ...(slide?.gallery || [])]
+    : slide?.gallery?.length > 0
+    ? slide.gallery
+    : [];
+
+  if (images.length === 0) {
+    return <div>No hay imágenes disponibles para este proyecto.</div>;
+  }
 
   return (
     <div
@@ -18,15 +28,14 @@ const ProjectSlide = ({ slide }) => {
             <Image
               width={824}
               height={654}
-              layout="responsive"
               src={image}
               className="d-block w-100"
-              alt="media"
+              alt={`Slide ${index + 1}`}
+              style={{ objectFit: "cover", borderRadius: "8px" }}
             />
           </div>
         ))}
       </div>
-      {/* End carousel-inner */}
 
       <button
         className="carousel-control-prev"
@@ -37,7 +46,6 @@ const ProjectSlide = ({ slide }) => {
         <i className="bi bi-chevron-left"></i>
         <span className="visually-hidden">Previous</span>
       </button>
-      {/* End prev */}
 
       <button
         className="carousel-control-next"
@@ -48,7 +56,6 @@ const ProjectSlide = ({ slide }) => {
         <i className="bi bi-chevron-right"></i>
         <span className="visually-hidden">Next</span>
       </button>
-      {/* End next */}
     </div>
   );
 };
