@@ -338,8 +338,8 @@ const LeadGeneration = () => {
       </div> */}
 
 
-<div className="fancy-short-banner-five p-30 mt-110" id="s5">
-        <div className="bg-wrapper position-relative pt-180 pb-140 lg-pt-80 lg-pb-80">
+<div className="fancy-short-banner-five mt-110" id="s5" >
+        <div className="bg-wrapper position-relative pt-180 pb-140 lg-pt-80 lg-pb-80" style={{background: 'rgb(240 255 97 / 86%)'}}>
           <img
             src="/images/shape/shape_68.svg"
             alt="shape"

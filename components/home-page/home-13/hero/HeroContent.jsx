@@ -19,7 +19,7 @@ const HeroContent = () => {
           href="/contact/contact-v1"
           className="demo-btn fw-500 tran3s d-inline-flex align-items-center mb-25 me-4"
         >
-          <span>Contáctanos</span>
+          <span>Contactanos</span>
           <img src="/images/icon/icon_91.svg" alt="img" className="ms-3" />
         </Link>
       </div>

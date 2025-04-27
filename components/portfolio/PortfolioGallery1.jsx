@@ -16,7 +16,7 @@ const PortfolioGallery1 = () => {
       : items.slice(0, 8).filter((item) => item.category.includes(filter));
 
   return (
-    <div className="portfolio-gallery-three pt-100">
+    <div className="portfolio-gallery-three mt-100 pt-100" style={{background: '#1a1a1a'}}>
       <div className="container">
             <div className="row">
                     <div className="col-xl-9 col-lg-7 col-md-8 m-auto">
@@ -25,7 +25,7 @@ const PortfolioGallery1 = () => {
                         data-aos="fade-up"
                       >
                         <div className="sc-title">EVENTOS</div>
-                        <h2 className="main-title font-recoleta fw-normal tx-dark">
+                        <h2 className="main-title font-recoleta fw-normal" style={{color: 'white'}}>
                           Conocé nuestros{" "}
                           <span className="position-relative">
                             proyectos:{" "}
