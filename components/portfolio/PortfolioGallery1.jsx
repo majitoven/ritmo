@@ -77,6 +77,10 @@ const PortfolioGallery1 = () => {
               <span className="visually-hidden">Cargando...</span>
             </div>
           </div>
+        ) : filteredItems.length === 0 ? (
+          <div className="text-center text-white">
+            No hay proyectos disponibles.
+          </div>
         ) : (
           <div className="row pt-20 lg-pt-50">
             <Gallery>
@@ -86,13 +90,12 @@ const PortfolioGallery1 = () => {
                   className={`col-lg-6 col-md-6 ${item.category}`}
                 >
                   <div className="portfolio-block-three position-relative mb-110 lg-mb-90">
-                    <div className="img-meta">
+                    <div className="img-meta" style={{ position: "relative", paddingTop: "79.37%" /* 500/630 aspect ratio */ }}>
                       <Image
-                        width={630}
-                        height={500}
-                        src={item.mainImage} // Use mainImage instead of image
+                        src={item.mainImage}
                         alt={item.title}
-                        className="w-100"
+                        fill // Use fill to make the image responsive
+                        style={{ objectFit: "cover", borderRadius: "8px" }} // Ensure the image covers the container without stretching
                         priority
                       />
                     </div>
@@ -103,9 +106,9 @@ const PortfolioGallery1 = () => {
                         className="title tran3s d-flex flex-column"
                       >
                         <span className="pj-name tran3s fw-500">
-                          {item.title} {/* Use title instead of name */}
+                          {item.title}
                         </span>
-                        <span className="tag">{item.client}</span> {/* Use client as the tag */}
+                        <span className="tag">{item.client}</span>
                       </Link>
 
                       <Link
