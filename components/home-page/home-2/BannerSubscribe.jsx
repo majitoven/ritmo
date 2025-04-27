@@ -15,7 +15,7 @@ const BannerSubscribe = () => {
                   ¿QUIÉNES SOMOS?
                 </h2>
                 <h3 className="mt-10 fw-bold tx-dark">
-                  Somos creadores de experiencias.
+                  Somos un estudio de eventos creativos.
                 </h3>
               </div>
               <p className="m0 tx-dark fs-20 lh-lg">

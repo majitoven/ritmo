@@ -37,7 +37,7 @@
   --prime-five: #007bff;
   --prime-six: #ffd338;
   --prime-seven: linear-gradient(-90deg, #ff7df2 0%, #ff275b 100%);
-  --prime-eight: #ffed4e;
+  --prime-eight: #F0FF61;
   // --prime-nine: #ff1292;
   --prime-nine: #5A5BFF;
   // --prime-ten: #ff3294;
@@ -6440,15 +6440,15 @@ body .btn-twentySix:hover:after {
   border-radius: 200px 200px 0 0;
 }
 .hero-banner-nine .img-box-three:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border: 3px solid #fff;
-  border-radius: 200px 200px 0 0;
-  top: 17px;
-  left: 14px;
-  z-index: -1;
+  // content: "";
+  // position: absolute;
+  // width: 100%;
+  // height: 100%;
+  // border: 3px solid #fff;
+  // border-radius: 200px 200px 0 0;
+  // top: 17px;
+  // left: 14px;
+  // z-index: -1;
 }
 .hero-banner-nine .img-box .shape-one {
   top: -12%;
@@ -10495,4 +10495,72 @@ body .btn-twentySix:hover:after {
   .testimonial-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* Keyframe for 360-degree rotation */
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Apply rotation animation to images */
+.rotate-image {
+  animation: rotate360 10s linear infinite; /* 10s for full rotation */
+  display: inline-block;
+}
+/* Keyframe for floating in different directions */
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Move up */
+  }
+  100% {
+    transform: translateY(0); /* Move back down */
+  }
+}
+
+@keyframes floatLeftRight {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px); /* Move right */
+  }
+  100% {
+    transform: translateX(0); /* Move back left */
+  }
+}
+
+@keyframes floatDiagonal {
+  0% {
+    transform: translate(0, 0); /* Start at normal position */
+  }
+  50% {
+    transform: translate(10px, -10px); /* Move diagonally */
+  }
+  100% {
+    transform: translate(0, 0); /* Return to original position */
+  }
+}
+
+/* Apply the floating animation to images */
+.float-image-updown {
+  animation: floatUpDown 3s ease-in-out infinite;
+  display: inline-block;
+}
+
+.float-image-leftright {
+  animation: floatLeftRight 3s ease-in-out infinite;
+  display: inline-block;
+}
+
+.float-image-diagonal {
+  animation: floatDiagonal 3s ease-in-out infinite;
+  display: inline-block;
 }

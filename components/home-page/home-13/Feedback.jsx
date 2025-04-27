@@ -1,34 +1,34 @@
 const Feedback = () => {
   const images = [
     {
-      src: "/images/media/img_44.jpg",
+      src: "/images/shape/1_alt.png",
       alt: "shape",
-      className: "lazy-img shapes shape-one",
+      className: "lazy-img shapes shape-one rotate-image",
     },
     {
-      src: "/images/media/img_45.jpg",
+      src: "/images/shape/2_alt.png",
       alt: "shape",
-      className: "lazy-img shapes shape-two",
+      className: "lazy-img shapes shape-two rotate-image",
     },
     {
-      src: "/images/media/img_46.jpg",
+      src: "/images/shape/3_alt.png",
       alt: "shape",
-      className: "lazy-img shapes shape-three",
+      className: "lazy-img shapes shape-three rotate-image",
     },
     {
-      src: "/images/media/img_47.jpg",
+      src: "/images/shape/4.png",
       alt: "shape",
-      className: "lazy-img shapes shape-four",
+      className: "lazy-img shapes shape-four rotate-image",
     },
     {
       src: "/images/shape/shape_120.svg",
       alt: "shape",
-      className: "lazy-img shapes shape-five",
+      className: "lazy-img shapes shape-five ",
     },
     {
       src: "/images/shape/shape_121.svg",
       alt: "shape",
-      className: "lazy-img shapes shape-six",
+      className: "lazy-img shapes shape-six ",
     },
   ];
 
@@ -38,7 +38,6 @@ const Feedback = () => {
       data-aos="fade-up"
     >
       <div className="container">
-
         <div className="row">
           <div className="col-xxl-11 col-lg-10 col-md-9 m-auto">
             <div className="feedback_slider_eight">
@@ -47,12 +46,9 @@ const Feedback = () => {
                   <p className="font-recoleta tx-dark mt-60 mb-65 lg-mt-40 lg-mb-40">
                     En Ritmo no solo creamos eventos, <span style={{color: '#5A5BFF'}}>creamos momentos</span> que conectan, inspiran y dejan huella.
                   </p>
-   
                 </div>
-                {/* /.feedback-block-eight */}
               </div>
             </div>
-            {/* /.feedback_slider_eight */}
           </div>
         </div>
       </div>

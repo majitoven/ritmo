@@ -34,28 +34,46 @@ const Header = () => {
           <div className="logo order-lg-0">
             <Link href="/" className="d-block">
               <Image
-                src="/images/logo/logo_06.png"
+                src="/images/logo/ritmoPalabra.png"
                 alt="logo"
-                width={95}
-                height={30}
+                width={200}
+                height={50}
               />
             </Link>
           </div>
+
           <div className="right-widget d-flex align-items-center ms-auto ms-lg-0 order-lg-3">
-            <Link
-              href="/login"
-              className="login-btn-two fw-500 d-flex align-items-center me-4"
+
+
+            {/* LinkedIn icon */}
+            <a
+              href="https://www.linkedin.com/company/ritmo-eventos/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="login-btn-two fw-500 d-flex align-items-center me-3 fs-4"
             >
-              <img src="/images/icon/icon_90.svg" alt="logo" className="me-2" />
-              <span>login</span>
-            </Link>
-            <Link
-              href="/signup"
+              <i className="fab fa-linkedin" />
+            </a>
+
+            {/* Instagram icon */}
+            <a
+              href="https://www.instagram.com/ritmo_uy/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="login-btn-two fw-500 d-flex align-items-center me-3 fs-4"
+            >
+              <i className="fab fa-instagram" />
+              <span style={{fontSize:'16px', marginLeft: '5px'}}>@ritmo_uy</span>
+            </a>
+            {/* Email button */}
+            <a
+              href="mailto:hola@estudioritmo.com"
               className="signup-btn-two fw-500 tran3s d-none d-lg-block"
             >
-              Sign Up
-            </Link>
+              hola@estudioritmo.com
+            </a>
           </div>
+
           {/* /.right-widget */}
           <MainMenu />
         </div>
