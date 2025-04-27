@@ -4,7 +4,7 @@ module.exports = [
     category: "eventos activaciones",
     name: "Cosquin Rock 2024",
     tag: "Evento",
-    image: "/images/gallery/img_10.jpg",
+    image: "/images/media/gallery/2.png",
     projectInfo: {
       date: "10 Febrero, 2024",
       clientName: "Monster",
@@ -18,7 +18,7 @@ module.exports = [
     category: "eventos inauguraciones",
     name: "Inauguración Jardín Gastronómico",
     tag: "Evento",
-    image: "/images/gallery/img_10.jpg",
+    image: "/images/media/gallery/4horizontal.png",
     projectInfo: {
       date: "5 Noviembre, 2023",
       clientName: "Almenara Mall",
