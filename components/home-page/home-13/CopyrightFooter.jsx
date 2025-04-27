@@ -13,16 +13,12 @@ const links = [
 
 const icons = [
   {
-    icon: "fab fa-facebook-f",
-    href: "https://www.facebook.com/",
-  },
-  {
-    icon: "fab fa-twitter",
-    href: "https://www.twitter.com/",
+    icon: "fab fa-instagram",
+    href: "https://www.instagram.com/ritmo_uy/",
   },
   {
     icon: "fab fa-linkedin-in",
-    href: "https://www.linkedin.com/",
+    href: "https://www.linkedin.com/company/ritmo-eventos",
   },
 ];
 
@@ -50,11 +46,7 @@ const CopyrightFooter = () => {
       <div className="container">
         <div className="row">
           <div className="col-lg-4 order-lg-0 mt-15">
-            <ul className="d-flex justify-content-center justify-content-lg-start footer-nav style-none">
-              {links.map((link, index) => (
-                <LinkItem key={index} title={link.title} href={link.href} />
-              ))}
-            </ul>
+
           </div>
           <div className="col-lg-4 order-lg-2 mt-15">
             <ul className="d-flex justify-content-center justify-content-lg-end social-icon style-none">
@@ -68,13 +60,12 @@ const CopyrightFooter = () => {
               Copyright © {new Date().getFullYear()}{" "}
               <a
                 style={{ color: "inherit" }}
-                href="https://themeforest.net/user/ib-themes"
+                href="https://instagram.com/heymorphe"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                ib-themes
+                Morphe Studio
               </a>{" "}
-              inc.
             </p>
           </div>
         </div>

@@ -8,10 +8,10 @@ const BannerSubscribe = () => {
           <div className="row justify-content-center text-center">
             <div className="col-lg-8">
               <div className="title mb-40">
-                <h6 className="fw-normal text-uppercase tx-dark">
+                <h6 className="fw-normal text-uppercase tx-dark" style={{fontSize: '20px'}}>
                   LA EMPRESA
                 </h6>
-                <h2 className="m0 fw-bold tx-dark">
+                <h2 className="m0 fw-bold tx-dark" style={{fontFamily: 'Kiera', letterSpacing: '2px', fontSize: '70px'}}>
                   ¿QUIÉNES SOMOS?
                 </h2>
                 <h3 className="mt-10 fw-bold tx-dark">
