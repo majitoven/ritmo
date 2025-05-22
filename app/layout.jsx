@@ -28,15 +28,15 @@ export default function RootLayout({ children }) {
 
         {/* WhatsApp Button */}
         <FloatingWhatsApp
-          phoneNumber="+598093990891"
-          accountName="Ignacio Durán & Asoc."
+          phoneNumber="+598099489999"
+          accountName="Ritmo"
           statusMessage="Te responderemos a la brevedad"
-          chatMessage="¿Cómo podemos ayudarte?"
+          chatMessage="Hola! ¿Cómo podemos ayudarte?"
           placeholder="Escribe tu mensaje…"
           allowClickAway
           notification={false}
           allowEsc
-          avatar="/images/whatsapp.png"
+          avatar="/images/logo/logoRitmo2.png"
           buttonStyle={{
             position: 'fixed',
             bottom: '20px',
@@ -51,8 +51,8 @@ export default function RootLayout({ children }) {
                 
                     background: var(--prime-ten) !important;
                     position: fixed !important;
-                    bottom: 40px !important;
-                    right: 40px !important;
+                    bottom: 20px !important;
+                    right: 20px !important;
                     z-index: 2000 !important;
                 }
 
