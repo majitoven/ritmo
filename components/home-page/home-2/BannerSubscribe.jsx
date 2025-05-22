@@ -13,16 +13,10 @@ const BannerSubscribe = () => {
           <div className="row justify-content-center text-center">
             <div className="col-lg-8">
               <div className="title mb-20">
-                <h6
-                  className="fw-normal text-uppercase tx-dark"
-                  style={{ fontSize: "20px" }}
-                >
-                  LA EMPRESA
-                </h6>
                 <h2
                   className="m0 fw-bold tx-dark contactanos-text"
                   style={{
-                    fontFamily: "Kiera",
+                    fontFamily:"LT Funk",
                     letterSpacing: "2px",
                     fontSize: "70px",
                   }}
@@ -41,18 +35,20 @@ const BannerSubscribe = () => {
                     marginTop: "15px",
                   }}
                 >
-                  Somos un estudio de eventos creativos.
+                  Somos un estudio creativo.
                 </h3>
               </div>
 
               <p className="m0 tx-dark fs-20 lh-lg">
-                En Ritmo diseñamos experiencias que conectan{" "}
-                <strong>marcas con personas.</strong> Cada proyecto refleja la{" "}
-                <strong>esencia</strong> de la marca y potencia su identidad.
-                Nos mueve la <strong>creatividad, la autenticidad</strong> y el
-                deseo de generar <strong>vínculos reales.</strong> Desde la idea
-                hasta la ejecución, cuidamos cada detalle para lograr{" "}
-                <strong>experiencias completas, memorables y de impacto positivo.</strong>
+              Creamos puntos de encuentro entre marcas y personas, diseñando experiencias que reflejan su esencia y potencian su identidad.
+              </p>
+              <p className="m0 tx-dark fs-20 lh-lg">
+
+              <span style={{fontWeight: 900}}>Planificamos, coordinamos y ejecutamos</span> de manera integral todo tipo de acciones. 
+             </p>
+             <p className="m0 tx-dark fs-20 lh-lg">
+             Desde la idea hasta la ejecución, cuidamos cada detalle siendo el socio confiable para tus proyectos.
+   
               </p>
             </div>
           </div>

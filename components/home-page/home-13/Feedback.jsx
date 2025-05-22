@@ -1,34 +1,24 @@
 const Feedback = () => {
   const images = [
     {
-      src: "/images/shape/1_alt.png",
+      src: "/images/shape/1b.png",
       alt: "shape",
       className: "lazy-img shapes shape-one rotate-image",
     },
     {
-      src: "/images/shape/2_alt.png",
+      src: "/images/shape/2b.png",
       alt: "shape",
       className: "lazy-img shapes shape-two rotate-image",
     },
     {
-      src: "/images/shape/3_alt.png",
+      src: "/images/shape/3b.png",
       alt: "shape",
       className: "lazy-img shapes shape-three rotate-image",
     },
     {
-      src: "/images/shape/4.png",
+      src: "/images/shape/4b.png",
       alt: "shape",
       className: "lazy-img shapes shape-four rotate-image",
-    },
-    {
-      src: "/images/shape/shape_120.svg",
-      alt: "shape",
-      className: "lazy-img shapes shape-five ",
-    },
-    {
-      src: "/images/shape/shape_121.svg",
-      alt: "shape",
-      className: "lazy-img shapes shape-six ",
     },
   ];
 
@@ -44,7 +34,7 @@ const Feedback = () => {
               <div className="item">
                 <div className="feedback-block-eight text-center">
                   <p className="font-recoleta tx-dark mt-60 mb-65 lg-mt-40 lg-mb-40">
-                    En Ritmo no solo creamos eventos, <span style={{color: '#5A5BFF'}}>creamos momentos</span> que conectan, inspiran y dejan huella.
+                    En Ritmo nos mueve <span style={{color: '#5A5BFF'}}>la creatividad, la autenticidad y el deseo</span> de generar vínculos reales.
                   </p>
                 </div>
               </div>
@@ -55,6 +45,7 @@ const Feedback = () => {
       {/* /.container */}
       {images.map((image, index) => (
         <img
+        style={{height: '120px'}}
           key={index}
           src={image.src}
           alt={image.alt}

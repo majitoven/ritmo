@@ -53,7 +53,7 @@ const OurMission = () => {
                   <Image
                     width={200}
                     height={200}
-                    src="/images/shape/1.png"
+                    src="/images/shape/1b.png"
                     alt="Rating Shape"
                     className="lazy-img"
                   />
@@ -98,7 +98,7 @@ const OurMission = () => {
               <Image
                 width={200}
                 height={200}
-                src="/images/shape/2.png"
+                src="/images/shape/2b.png"
                 alt="Customer Shape"
                 className="lazy-img"
               />

@@ -53,24 +53,7 @@ const LeadGeneration = () => {
         Feature Section Thirty One
         ============================================== 
         */}
-      <div className="fancy-feature-thirtyOne position-relative zn2 pt-40 pb-40 lg-pt-40 lg-pb-40">
-        <div className="container">
-     
 
-        </div>
-        {/* /.container */}
-
-        <img
-          src="/images/shape/shape_124.svg"
-          alt="icon shape"
-          className="lazy-img shapes shape-one"
-        />
-        <img
-          src="/images/shape/shape_125.svg"
-          alt="icon shape"
-          className="lazy-img shapes shape-two"
-        />
-      </div>
 
       {/* 
 			=============================================
@@ -87,7 +70,7 @@ const LeadGeneration = () => {
                   data-aos="fade-right"
                 >
                   <div className="sc-title">SERVICIOS</div>
-                  <h2 className="main-title font-recoleta fw-normal tx-dark">
+                  <h2 className="main-title  fw-normal tx-dark" style={{fontFamily: 'LT Funk'}}>
                     Descubrí todos nuestros
                     <span className="position-relative">
                       {" "}
@@ -106,16 +89,7 @@ const LeadGeneration = () => {
         </div>
         {/* End .container */}
 
-        <img
-          src="/images/shape/shape_130.svg"
-          alt=""
-          className="lazy-img shapes shape-one"
-        />
-        <img
-          src="/images/shape/shape_131.svg"
-          alt=""
-          className="lazy-img shapes shape-two"
-        />
+   
       </div>
 
       
@@ -145,12 +119,11 @@ const LeadGeneration = () => {
         </div>
       </div> */}
 
-
+{/*  GALERIA
 <div className="fancy-feature-fiftyEight position-relative zn2 pt-40 md-pt-40">
         <div className="container position-relative">
     
           <OurMission />
-          {/* End .row */}
 
           <Image
             width={449}
@@ -160,7 +133,7 @@ const LeadGeneration = () => {
             className="lazy-img shapes shape-one"
           />
         </div>
-      </div>
+      </div> */}
 
 
 
@@ -234,16 +207,7 @@ const LeadGeneration = () => {
         </div>
         {/* /.container */}
 
-        <img
-          src="/images/shape/shape_38.svg"
-          alt="shape"
-          className="lazy-img shapes shape-one"
-        />
-        <img
-          src="/images/shape/shape_39.svg"
-          alt="shape"
-          className="lazy-img shapes shape-two"
-        />
+  
       </div>
       {/* 
         =============================================
@@ -404,13 +368,7 @@ const LeadGeneration = () => {
         <CopyrightFooter />
 
         <div className="shapes shape-one" />
-        <Image
-          width={84}
-          height={104}
-          src="/images/shape/shape_134.svg"
-          alt="shape"
-          className="lazy-img shapes shape-two"
-        />
+    
       </div>
       {/* /.footer-style-nine */}
     </>

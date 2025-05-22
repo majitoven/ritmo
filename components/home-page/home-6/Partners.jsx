@@ -102,7 +102,7 @@ const Partners = () => {
               height: "150px",
               borderRadius: "50%",
               background: "#ffffff",
-              boxShadow: "0 0 20px rgba(0,0,0,0.05)",
+              boxShadow: "none !important",
               margin: "auto",
               overflow: "hidden",
             }}

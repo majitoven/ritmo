@@ -65,7 +65,6 @@ const Header = () => {
               className="login-btn-two fw-500 d-flex align-items-center me-3 fs-4"
             >
               <i className="fab fa-instagram" />
-              <span style={{fontSize:'16px', marginLeft: '5px'}}>@ritmo_uy</span>
             </a>
             {/* Email button */}
             <a

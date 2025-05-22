@@ -15,7 +15,7 @@ const serviceData = [
     title: "ACTIVACIONES",
     subtitle: "Experiencias que generan conexión",
     description:
-      "Creamos experiencias interactivas que conectan emocionalmente con tu audiencia y dejan huella.",
+      "Desarrollamos acciones estratégicas, creativas y de alto impacto que aumentan la visibilidad, potencian la marca y fortalecen el vínculo con el consumidor.",
     background: "#F0FF61",
     subtitleBg: "#C593FF", // Light Purple
   },
@@ -23,7 +23,7 @@ const serviceData = [
     title: "STANDS",
     subtitle: "Espacios que hacen brillar tu marca",
     description:
-      "Diseñamos espacios atractivos, funcionales y estratégicos para ferias, exposiciones, congresos o centros comerciales. Lugares donde tu marca puede brillar y conectar.",
+      "Creamos espacios atractivos, funcionales y estratégicos para ferias, exposiciones, congresos o centros comerciales. Lugares donde tu marca puede brillar y conectar con su público objetivo.",
     background: "#C593FF",
     subtitleBg: "#C5DBF2", // Light Blue
   },
@@ -31,7 +31,7 @@ const serviceData = [
     title: "MERCHANDISING",
     subtitle: "Productos que transmiten tu identidad",
     description:
-      "Desarrollamos productos promocionales personalizados que transmiten tu identidad, generan cercanía y hacen que tu marca esté presente en el día a día.",
+      "Diseñamos productos personalizados que transmiten tu identidad, generan cercanía y hacen que tu marca esté presente en el día a día.",
     background: "#C5DBF2",
     subtitleBg: "#F0FF61", // Neon Yellow
   },
@@ -50,7 +50,7 @@ const Testimonial = () => {
             <div
               className="cmp-name fw-500 tx-dark"
               style={{
-                fontFamily: "Kiera",
+                fontFamily: "LT Funk",
                 letterSpacing: "2px",
                 fontSize: "50px",
               }}
@@ -59,7 +59,7 @@ const Testimonial = () => {
             </div>
 
             {/* SUBTITLE */}
-            <div
+            {/* <div
               className="subtitle-block mt-15 mb-20"
               style={{
                 fontFamily: "LT Funk",
@@ -73,7 +73,7 @@ const Testimonial = () => {
               }}
             >
               {service.subtitle}
-            </div>
+            </div> */}
 
             <p
               className="tx-dark mb-20 lg-mt-20 lg-mb-20"
