@@ -22,20 +22,7 @@ const PortfolioDetailsTitle = ({ portfolio }) => {
           </div>
         </div>
       </div>
-      <Image
-        src="/images/shape/shape_172.svg"
-        alt="shape"
-        width={200}
-        height={200}
-        className="lazy-img shapes shape-two"
-      />
-      <Image
-        src="/images/shape/shape_175.svg"
-        alt="shape"
-        width={200}
-        height={200}
-        className="lazy-img shapes shape-three"
-      />
+
     </div>
   );
 };
