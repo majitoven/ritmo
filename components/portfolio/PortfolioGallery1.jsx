@@ -212,6 +212,12 @@ const PortfolioGalleryCarousel = () => {
           border-radius: 8px;
         }
 
+        @media (max-width: 800px) {
+      .image-container {
+          height: 22rem;
+        }
+      }
+
         /* Dim & shrink all slides by default */
         :global(.portfolio-gallery-carousel .slick-slide) {
           opacity: 0.5 !important;
