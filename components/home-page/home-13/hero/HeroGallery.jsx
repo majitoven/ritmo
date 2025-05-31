@@ -1,18 +1,23 @@
 const HeroGallery = () => {
   return (
     <>
-      <div className="col-6" style={{paddingRight: 0}}>
-        <div className="img-box position-relative  mt-35 img-box-one">
+      <div className="col-6" style={{paddingRight: 0,  
+      height: '100%',
+    display: 'flex',
+    alignItems: 'end',
+    flexDirection: 'column'
+    }}>
+        <div className="img-box position-relative img-box-one">
           <img
-            style={{ height: "200px" }}
+            style={{ height: "150px", marginRight: '20px', marginTop: '30px' }}
             src="/images/shape/1b.png"
             alt="img"
             className="lazy-img main-img float-image-updown" // Added different float class
           />
         </div>
-        <div className="img-box position-relative mt-35  img-box-two">
+        <div className="img-box position-relative  img-box-two">
           <img
-            style={{ height: "200px" }}
+            style={{ height: "80px",  marginBottom: '-50px'  }}
             src="/images/shape/2b.png"
             alt="img"
             className="lazy-img main-img float-image-diagonal" // Added diagonal float class

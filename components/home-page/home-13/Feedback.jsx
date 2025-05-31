@@ -1,22 +1,22 @@
 const Feedback = () => {
   const images = [
     {
-      src: "/images/shape/1b.png",
+      src: "/images/shape/2b.png",
       alt: "shape",
       className: "lazy-img shapes shape-one rotate-image",
     },
     {
-      src: "/images/shape/2b.png",
+      src: "/images/shape/1b.png",
       alt: "shape",
       className: "lazy-img shapes shape-two rotate-image",
     },
     {
-      src: "/images/shape/3b.png",
+      src: "/images/shape/4b.png",
       alt: "shape",
       className: "lazy-img shapes shape-three rotate-image",
     },
     {
-      src: "/images/shape/4b.png",
+      src: "/images/shape/3b.png",
       alt: "shape",
       className: "lazy-img shapes shape-four rotate-image",
     },

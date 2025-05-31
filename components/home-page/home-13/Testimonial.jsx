@@ -4,7 +4,7 @@ import React from "react";
 
 const serviceData = [
   {
-    title: "EVENTOS",
+    title: "Eventos",
     subtitle: "Producción integral de eventos",
     description:
       "Nos encargamos de la producción integral de todo tipo de eventos, desde la idea creativa hasta la ejecución final. Lanzamientos, inauguraciones, eventos corporativos, team buildings y más.",
@@ -12,7 +12,7 @@ const serviceData = [
     subtitleBg: "#D97532", // Orange
   },
   {
-    title: "ACTIVACIONES",
+    title: "Activaciones",
     subtitle: "Experiencias que generan conexión",
     description:
       "Desarrollamos acciones estratégicas, creativas y de alto impacto que aumentan la visibilidad, potencian la marca y fortalecen el vínculo con el consumidor.",
@@ -20,7 +20,7 @@ const serviceData = [
     subtitleBg: "#C593FF", // Light Purple
   },
   {
-    title: "STANDS",
+    title: "Stands",
     subtitle: "Espacios que hacen brillar tu marca",
     description:
       "Creamos espacios atractivos, funcionales y estratégicos para ferias, exposiciones, congresos o centros comerciales. Lugares donde tu marca puede brillar y conectar con su público objetivo.",
@@ -28,7 +28,7 @@ const serviceData = [
     subtitleBg: "#C5DBF2", // Light Blue
   },
   {
-    title: "MERCHANDISING",
+    title: "Merchandising",
     subtitle: "Productos que transmiten tu identidad",
     description:
       "Diseñamos productos personalizados que transmiten tu identidad, generan cercanía y hacen que tu marca esté presente en el día a día.",

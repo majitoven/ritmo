@@ -2639,7 +2639,7 @@ body .btn-twentySix:hover:after {
 .partner-section-one .img-box {
   background: #fff;
   border-radius: 50%;
-  box-shadow: 15px 30px 50px rgba(23, 32, 90, 0.06);
+  // box-shadow: 15px 30px 50px rgba(23, 32, 90, 0.06);
   width: 175px;
   height: 175px;
   margin: 0 auto 25px;
@@ -6430,6 +6430,7 @@ body .btn-twentySix:hover:after {
   width: 43%;
   max-width: 800px;
 }
+
 .hero-banner-nine .img-box-one .main-img {
   border-radius: 0 0 150px 150px;
 }
@@ -6470,7 +6471,7 @@ body .btn-twentySix:hover:after {
 .partner-section-five {
   background: #e3ff75;
   // transform: rotate(0.65deg);
-  padding: 17px 0;
+  padding: 10px 0;
 }
 .partner-section-five .wrapper {
   width: 1660px;
@@ -6511,17 +6512,19 @@ body .btn-twentySix:hover:after {
   border-radius: 100px 0 0 100px;
 }
 .feedback-section-eight .shape-two {
-  top: 20%;
+  bottom: 4%;
+  height: 80px !important;
   right: 9%;
   border-radius: 200px;
 }
 .feedback-section-eight .shape-three {
-  bottom: 0;
-  left: 12%;
+  top: 12%;
+  left: 10%;
+  height: 80px !important;
   border-radius: 200px;
 }
 .feedback-section-eight .shape-four {
-  bottom: 0;
+  bottom: -10%;
   right: 3%;
   border-radius: 0 0 100px 100px;
 }

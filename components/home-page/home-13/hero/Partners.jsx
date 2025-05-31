@@ -13,9 +13,9 @@ const Partners = () => {
           <div className="ticker">
             {repeatedPhrases.map((_, index) => (
               <div key={index} className="ticker-item d-flex justify-content-center align-items-center">
-                <h3 className="title tx-dark d-flex justify-content-center align-items-center">
-                  <span className="fw-bold" >Le damos</span>
-                  <span className="font-recoleta ms-2">ritmo a tus ideas</span>
+                <h3 style={{marginBottom: '0px', fontSize: '22px'}} className="title tx-dark d-flex justify-content-center align-items-center" >
+                  <span className="fw-bold" style={{marginBottom: '5px'}}>Le damos</span>
+                  <span className="font-recoleta ms-2" >ritmo a tus ideas</span>
 
                 </h3>
                 
@@ -55,7 +55,7 @@ const Partners = () => {
         }
 
         .ticker-separator {
-          width: 80px;
+          width: 70px;
           height: 1px;
           background-color: #000;
           margin: 0 32px;

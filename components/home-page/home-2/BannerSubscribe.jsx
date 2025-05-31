@@ -3,7 +3,7 @@ import Form from "./Form";
 const BannerSubscribe = () => {
   return (
     <div
-      id="sobre-nosotros"
+      // id="sobre-nosotros"
       className="fancy-short-banner-nine lg-pt-80"
       data-aos="fade-up"
       style={{ background: "#fafafa", marginTop: '100px', paddingTop: "80px" }}
@@ -21,7 +21,7 @@ const BannerSubscribe = () => {
                     fontSize: "70px",
                   }}
                 >
-                  ¿QUIÉNES SOMOS?
+                  ¿Quiénes somos?
                 </h2>
                 <h3
                   className="mt-10 fw-bold tx-dark"
@@ -47,7 +47,7 @@ const BannerSubscribe = () => {
               <span style={{fontWeight: 900}}>Planificamos, coordinamos y ejecutamos</span> de manera integral todo tipo de acciones. 
              </p>
              <p className="m0 tx-dark fs-20 lh-lg">
-             Desde la idea hasta la ejecución, cuidamos cada detalle siendo el socio confiable para tus proyectos.
+             Desde la idea hasta la ejecución, cuidamos cada detalle siendo el socio <br /> confiable para tus proyectos.
    
               </p>
             </div>

@@ -44,6 +44,7 @@ const LeadGeneration = () => {
         Feature Section Thirty
         ============================================== 
         */}
+        <div  id="sobre-nosotros"></div>
 <BannerSubscribe  />
 {/* <Feature /> */}
       {/* /.fancy-feature-thirty */}
@@ -168,8 +169,9 @@ const LeadGeneration = () => {
 
       <PortfolioGallery1 />
 
+      <div  id="clientes"></div>
 
-      <div id="clientes" className="partner-section-one position-relative mt-100 lg-mt-100">
+      <div  className="partner-section-one position-relative mt-100 lg-mt-100">
         <div className="container">
                  <div className="row">
                          <div className="col-xl-9 col-lg-7 col-md-8 m-auto">
