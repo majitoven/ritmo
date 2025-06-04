@@ -2573,6 +2573,31 @@
 
 /*Grid sm Start*/
 @media (max-width: 767px) {
+
+  .hero-banner-nine .hero-heading span img {
+    bottom: 0px !important;
+  }
+
+  .title-style-fourteen .main-title img {
+    bottom: 0px !important;
+}
+
+  .feedback-section-eight .shape-three {
+    left: 15% !important;
+  }
+
+  .feedback-section-eight .shape-two {
+
+    right: 0 !important
+  }
+
+  .feedback-section-eight .shape-one {
+    left: 0 !important 
+  }
+  .feedback-section-eight .shapes {
+    height:75px !important;
+
+  }
   body .btn-twentyTwo {
     line-height: 50px;
     padding: 0 35px;
@@ -2679,7 +2704,7 @@
   .fancy-feature-twentySeven .r-shape-one,
   .footer-style-one .shape-one,
   .feedback-section-eight .shapes {
-    display: none !important;
+    // display: none !important;
   }
   .footer-style-five .bottom-footer .footer-nav a {
     margin: 0 10px 5px;
