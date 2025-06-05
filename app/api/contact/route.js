@@ -24,23 +24,12 @@ export async function POST(request) {
 
     // Create transporter with Gmail SMTP
     const transporter = nodemailer.createTransport({
-      service: 'gmail', // This automatically uses smtp.gmail.com:587
+      service: 'gmail',
       auth: {
         user: 'hola@estudioritmo.com',
-        pass: 'your-16-character-app-password-here' // Replace with your App Password
+        pass: 'volsnchcaafocyac' // App Password (sin espacios)
       }
     });
-
-    // Alternative manual configuration:
-    // const transporter = nodemailer.createTransport({
-    //   host: 'smtp.gmail.com',
-    //   port: 587,
-    //   secure: false,
-    //   auth: {
-    //     user: 'hola@estudioritmo.com',
-    //     pass: 'your-16-character-app-password-here'
-    //   }
-    // });
 
     // Email content
     const mailOptions = {
