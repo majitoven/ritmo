@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://estudioritmo.com/sitemap.xml
+
+# Allow portfolio pages
+Allow: /portfolio
