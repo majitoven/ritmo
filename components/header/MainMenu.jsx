@@ -7,6 +7,9 @@ import Image from "next/image";
 const MainMenu = () => {
   const pathname = usePathname();
 
+  // Check if we're on the home page
+  const isHomePage = pathname === "/";
+
   return (
     <nav className="navbar navbar-expand-lg order-lg-2">
       {/* Mobile button */}
@@ -31,40 +34,40 @@ const MainMenu = () => {
               <Image
                 src="/images/logo/ritmoPalabra.png"
                 alt="logo"
-                width={160} // Updated width to 160
-                height={40} // Updated height to 40
+                width={160}
+                height={40}
               />
             </Link>
           </li>
 
           {/* Menu Items */}
           <li className="nav-item">
-            <Link href="#hero" className="nav-link">
+            <Link href={isHomePage ? "#hero" : "/#hero"} className="nav-link">
               Home
             </Link>
           </li>
           <li className="nav-item">
-            <Link href="#sobre-nosotros" className="nav-link">
+            <Link href={isHomePage ? "#sobre-nosotros" : "/#sobre-nosotros"} className="nav-link">
               Nosotros
             </Link>
           </li>
           <li className="nav-item">
-            <Link href="#servicios" className="nav-link">
+            <Link href={isHomePage ? "#servicios" : "/#servicios"} className="nav-link">
               Servicios
             </Link>
           </li>
           <li className="nav-item">
-            <Link href="#proyectos" className="nav-link">
+            <Link href={isHomePage ? "#proyectos" : "/#proyectos"} className="nav-link">
               Proyectos
             </Link>
           </li>
           <li className="nav-item">
-            <Link href="#clientes" className="nav-link">
+            <Link href={isHomePage ? "#clientes" : "/#clientes"} className="nav-link">
               Clientes
             </Link>
           </li>
           <li className="nav-item">
-            <Link href="#contacto" className="nav-link">
+            <Link href={isHomePage ? "#contacto" : "/#contacto"} className="nav-link">
               Contacto
             </Link>
           </li>
@@ -74,7 +77,7 @@ const MainMenu = () => {
         <div className="mobile-content d-block d-lg-none mt-4">
           <div className="d-flex flex-column align-items-center">
             <Link
-              href="#contacto"
+              href={isHomePage ? "#contacto" : "/#contacto"}
               className="btn-twentyOne fw-500 tran3s"
               style={{
                 padding: "10px 25px",
