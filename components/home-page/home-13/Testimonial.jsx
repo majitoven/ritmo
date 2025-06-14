@@ -77,7 +77,7 @@ const Testimonial = () => {
 
             <p
               className="tx-dark mb-20 lg-mt-20 lg-mb-20"
-              style={{ fontSize: "22px" }}
+              style={{ fontSize: "20px" }}
             >
               {service.description}
             </p>

@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
           statusMessage="Te responderemos a la brevedad"
           chatMessage="Hola! ¿Cómo podemos ayudarte?"
           placeholder="Escribe tu mensaje…"
-          allowClickAway
+          allowClickAway={false}
           notification={false}
           allowEsc
           avatar="/images/logo/logoRitmo2.png"

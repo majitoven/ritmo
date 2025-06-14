@@ -9,12 +9,12 @@ const PortfolioDetailsTitle = ({ portfolio }) => {
       <div className="container">
         <div className="row">
           <div className="col-lg-7" data-aos="fade-right">
-            <div className="title-style-five mb-65 lg-mb-40">
+            <div className="title-style-five">
               <div className="sc-title-two fst-italic position-relative">
                 {portfolio?.client || "Cliente no especificado"}
               </div>
               <h2
-               className="main-title fw-500 tx-dark" style={{fontFamily: 'LT Funk'}}
+               className="main-title fw-500 tx-dark" style={{fontFamily: 'LT Funk', fontSize: '54px'}}
               >
                 {portfolio?.title || "Sin título"}
               </h2>

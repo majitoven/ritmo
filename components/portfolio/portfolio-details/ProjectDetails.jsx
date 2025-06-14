@@ -16,7 +16,7 @@ const ProjectDetails = ({ details }) => {
         <div className="pt-text">{details.client || "Sin cliente"}</div>
       </div>
 
-      <div className="col-12 mb-35">
+      <div className="col-12 mb-10">
         <div className="pt-title fw-bold tx-dark text-uppercase">Categoría</div>
         <div className="pt-text">{details.category || "Sin categoría"}</div>
       </div>

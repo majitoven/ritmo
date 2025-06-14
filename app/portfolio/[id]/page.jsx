@@ -84,7 +84,7 @@ const DynamicPortfolioDetails = ({ params }) => {
 
       <PortfolioDetailsTitle portfolio={portfolio} />
 
-      <div className="portfolio-details-two pt-70 pb-50 lg-pb-10 md-pt-10">
+      <div className="portfolio-details-two pt-30 pb-20 lg-pb-10 md-pt-10">
         <div className="project-desctiption">
           <div className="container">
             <div className="row">
@@ -93,7 +93,7 @@ const DynamicPortfolioDetails = ({ params }) => {
               </div>
 
               <div className="col-lg-4" data-aos="fade-left">
-                <div className="sidebar ms-xl-5">
+                <div className="sidebar ms-xl-5" style={{paddingLeft: '40px', borderLeft: '4px solid rgb(109, 109, 241)'}}>
                   <div className="row">
                     <ProjectDetails details={portfolio} />
                   </div>
@@ -101,7 +101,7 @@ const DynamicPortfolioDetails = ({ params }) => {
               </div>
             </div>
 
-            <div className="col-xl-9 mt-120 lg-mt-80">
+            <div className="col-xl-9 mt-100 mb-100 lg-mt-80">
               <div
                 className="title-style-twelve mb-45 lg-mb-30"
                 data-aos="fade-up"
@@ -109,9 +109,9 @@ const DynamicPortfolioDetails = ({ params }) => {
                 <div className="sc-title fst-italic position-relative">
                   Descripción
                 </div>
-                <h2 className="main-title fw-500 tx-dark">Acerca del evento</h2>
+                <h2 className="main-title fw-500 tx-dark" style={{fontSize: '54px'}}>Acerca del evento</h2>
               </div>
-              <p data-aos="fade-up">{portfolio.description}</p>
+              <p data-aos="fade-up" style={{fontSize: '20px'}}>{portfolio.description}</p>
 
               <div className="row">
               <PortfolioGallery mainImage={portfolio.mainImage} gallery={portfolio.gallery} />              </div>

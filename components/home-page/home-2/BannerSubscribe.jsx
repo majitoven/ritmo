@@ -18,7 +18,8 @@ const BannerSubscribe = () => {
                   style={{
                     fontFamily:"LT Funk",
                     letterSpacing: "2px",
-                    fontSize: "70px",
+                    lineHeight: '1.17em',
+                    fontSize: "54px",
                   }}
                 >
                   ¿Quiénes somos?
@@ -32,7 +33,7 @@ const BannerSubscribe = () => {
                     padding: "5px 10px",
                     borderRadius: "8px",
                     display: "inline-block",
-                    marginTop: "15px",
+                    marginTop: "18px",
                   }}
                 >
                   Somos un estudio creativo.

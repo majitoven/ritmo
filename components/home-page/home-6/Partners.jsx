@@ -13,7 +13,7 @@ const Partners = () => {
       dataAosDelay: "100",
     },
     {
-      imgSrc: "/images/clientes/2.png",
+      imgSrc: "/images/clientes/10.png",
       imgAlt: "logo",
       link: "#",
       colClasses: "col-xl-2 col-lg-3 col-md-4 col-6",
@@ -76,14 +76,7 @@ const Partners = () => {
       dataAos: "fade",
       dataAosDelay: "900",
     },
-    {
-      imgSrc: "/images/clientes/10.png",
-      imgAlt: "logo",
-      link: "#",
-      colClasses: "col-xl-3 col-lg-12 col-md-4 col-6 m-auto",
-      dataAos: "fade",
-      dataAosDelay: "1000",
-    },
+
   ];
 
   return (

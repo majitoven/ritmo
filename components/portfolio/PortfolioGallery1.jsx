@@ -93,7 +93,7 @@ const PortfolioGalleryCarousel = () => {
 
   const sliderSettings = {
     centerMode: true,
-    centerPadding: "200px",
+    centerPadding: "300px",
     dots: true,
     infinite: true,
     autoplay: true,
@@ -121,13 +121,14 @@ const PortfolioGalleryCarousel = () => {
           <div className="row">
             <div className="col-xl-9 col-lg-7 col-md-8 m-auto">
               <div
-                className="title-style-fourteen text-center mb-100 lg-mb-70"
+                className="title-style-fourteen text-center mb-60 lg-mb-70"
                 data-aos="fade-up"
               >
                 <div className="sc-title">EVENTOS</div>
                 <h2
                   className="main-title font-recoleta fw-normal"
-                  style={{ color: "white" }}
+                  style={{ color: "white" , fontSize: '54px',lineHeight: '1.17em',
+                  }}
                 >
                   Conocé nuestros{" "}
                   <span className="position-relative">
@@ -207,7 +208,7 @@ const PortfolioGalleryCarousel = () => {
         .image-container {
           position: relative;
           width: 100%;
-          height: 35rem;
+          height: 26rem;
           overflow: hidden;
           border-radius: 8px;
         }
