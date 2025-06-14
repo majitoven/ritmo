@@ -3,7 +3,6 @@ import Form from "./Form";
 const BannerSubscribe = () => {
   return (
     <div
-      // id="sobre-nosotros"
       className="fancy-short-banner-nine lg-pt-80"
       data-aos="fade-up"
       style={{ background: "#fafafa", marginTop: '100px', paddingTop: "80px" }}

@@ -5,7 +5,7 @@ import Partners from "./Partners";
 
 const index = () => {
   return (
-    <div id="hero" className="hero-banner-nine position-relative zn2 pt-225 md-pt-150">
+    <div id="hero" className="hero-banner-nine position-relative zn2 pt-250 md-pt-150">
       <div className="container">
         <div className="row">
           <div className="col-lg-6 col-md-6" data-aos="fade-right">

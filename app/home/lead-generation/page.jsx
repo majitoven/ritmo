@@ -125,7 +125,7 @@ const LeadGeneration = () => {
 
       <div id="clientes"></div>
 
-      <div className="partner-section-one position-relative mt-100 lg-mt-100">
+      <div className="partner-section-one position-relative mt-100 lg-mt-120">
         <div className="container">
           <div className="row">
             <div className="col-xl-9 col-lg-7 col-md-8 m-auto">
@@ -162,7 +162,7 @@ const LeadGeneration = () => {
       </div>
 
       <div className="fancy-short-banner-five mt-110" id="s5">
-        <div id="contacto" className="bg-wrapper position-relative pt-180 pb-140 lg-pt-80 lg-pb-80" style={{ background: "rgb(240 255 97 / 86%)" }}>
+        <div id="contacto" className="bg-wrapper position-relative pt-150 pb-140 lg-pt-80 lg-pb-80" style={{ background: "rgb(240 255 97 / 86%)" }}>
           <div className="r-shape-one position-absolute" />
           <div className="container">
             <div className="innner-content bg-white position-relative" data-aos="fade-up">
@@ -182,9 +182,7 @@ const LeadGeneration = () => {
                       }}>Contactanos.</span>
                     </span>
                   </h2>
-                  <p className="text-lg mt-35 md-mt-20" style={{
-                    fontSize: "20px",
-                  }}>
+                  <p className="text-lg mt-35 md-mt-20 comunic-txt">
                     Envianos un mensaje y nos contactaremos a la brevedad.
                   </p>
                 </div>
