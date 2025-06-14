@@ -1,15 +1,23 @@
 // MainRoot component (your main page)
 import LeadGeneration from "./home/lead-generation/page";
 
+// En tu archivo app/layout.js o donde tengas el <head> principal, agregar:
+
 export const metadata = {
   title: "Ritmo - Organización de Eventos Corporativos y Sociales en Uruguay",
   description: "Expertos en organización de eventos corporativos, bodas y eventos sociales en Montevideo, Uruguay. Productora creativa con más de 10 años de experiencia creando experiencias únicas.",
   keywords: "eventos corporativos Uruguay, organización eventos Montevideo, wedding planner Uruguay, eventos empresariales, productora eventos, bodas Uruguay, eventos sociales Montevideo, planificación eventos corporativos",
+  
+  // AGREGAR ESTA LÍNEA PARA GOOGLE SEARCH CONSOLE:
+  verification: {
+    google: "Vh-rjQ92oUSWZUrE" // El código que aparece en su pantalla
+  },
+
+  // ... resto de tu metadata
   authors: [{ name: "Ritmo - Estudio de Eventos" }],
   creator: "Ritmo - Estudio de Eventos",
   publisher: "Ritmo - Estudio de Eventos",
   
-  // Open Graph (Facebook, LinkedIn, etc.)
   openGraph: {
     title: "Ritmo - Organización de Eventos Corporativos y Sociales en Uruguay",
     description: "Expertos en organización de eventos corporativos, bodas y eventos sociales en Montevideo, Uruguay. Creamos experiencias únicas e inolvidables.",
@@ -17,7 +25,7 @@ export const metadata = {
     siteName: "Ritmo - Estudio de Eventos",
     images: [
       {
-        url: "/images/logo/ritmoPalabra.png", // Tu logo actual
+        url: "/images/logo/ritmoPalabra.png", // O la imagen que tengas
         width: 1200,
         height: 630,
         alt: "Ritmo - Organización de Eventos en Uruguay",
@@ -27,7 +35,6 @@ export const metadata = {
     type: "website",
   },
 
-  // Twitter Card
   twitter: {
     card: "summary_large_image",
     title: "Ritmo - Organización de Eventos Corporativos en Uruguay",
@@ -36,7 +43,6 @@ export const metadata = {
     creator: "@ritmo_uy",
   },
 
-  // Additional meta tags
   robots: {
     index: true,
     follow: true,
@@ -49,16 +55,14 @@ export const metadata = {
     },
   },
 
-  // Canonical URL
   alternates: {
     canonical: "https://estudioritmo.com",
   },
 
-  // Additional structured data
   other: {
     "geo.region": "UY-MO",
     "geo.placename": "Montevideo",
-    "geo.position": "-34.9011;-56.1645", // Coordenadas de Montevideo
+    "geo.position": "-34.9011;-56.1645",
     "ICBM": "-34.9011, -56.1645",
     "language": "es",
     "country": "Uruguay",
