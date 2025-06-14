@@ -134,7 +134,7 @@ const LeadGeneration = () => {
                 data-aos="fade-up"
               >
                 <div className="sc-title">CLIENTES</div>
-                <h2 className="main-title font-recoleta fw-normal tx-dark" style={{ fontSize: '54px',lineHeight: '1.17em',}}>
+                <h2 className="main-title font-recoleta fw-normal tx-dark" >
                   Empresas que{" "}
                   <span className="position-relative">
                     confiaron{" "}
@@ -169,7 +169,7 @@ const LeadGeneration = () => {
               <div className="r-shape-two rounded-circle position-absolute" />
               <div className="row align-items-center">
                 <div className="col-lg-5">
-                  <h2 className="title-xl font-recoleta fw-500 tx-dark" style={{ fontSize: '54px',lineHeight: '1.17em',}}>
+                  <h2 className="title-xl font-recoleta fw-500 tx-dark consultas-txt"  >
                     ¿Tenés consultas?
                     <span
                       className="d-inline-block position-relative"

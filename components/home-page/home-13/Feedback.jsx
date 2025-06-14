@@ -34,7 +34,7 @@ const Feedback = () => {
               <div className="item">
                 <div className="feedback-block-eight text-center">
                   <p className="font-recoleta tx-dark mt-60 mb-65 lg-mt-40 lg-mb-40" style={{lineHeight: '1.17em',
-                    fontSize: "65px",
+           
                   }}>
                     En Ritmo nos mueve <span style={{color: '#5A5BFF'}}>la creatividad, la autenticidad y el deseo</span> de generar vínculos reales.
                   </p>

@@ -14,7 +14,7 @@ const PortfolioDetailsTitle = ({ portfolio }) => {
                 {portfolio?.client || "Cliente no especificado"}
               </div>
               <h2
-               className="main-title fw-500 tx-dark" style={{fontFamily: 'LT Funk', fontSize: '54px'}}
+               className="main-title fw-500 tx-dark" style={{fontFamily: 'LT Funk'}}
               >
                 {portfolio?.title || "Sin título"}
               </h2>

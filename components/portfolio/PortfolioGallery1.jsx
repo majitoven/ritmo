@@ -127,7 +127,7 @@ const PortfolioGalleryCarousel = () => {
                 <div className="sc-title">EVENTOS</div>
                 <h2
                   className="main-title font-recoleta fw-normal"
-                  style={{ color: "white" , fontSize: '54px',lineHeight: '1.17em',
+                  style={{ color: "white"
                   }}
                 >
                   Conocé nuestros{" "}

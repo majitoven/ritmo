@@ -109,7 +109,7 @@ const DynamicPortfolioDetails = ({ params }) => {
                 <div className="sc-title fst-italic position-relative">
                   Descripción
                 </div>
-                <h2 className="main-title fw-500 tx-dark" style={{fontSize: '54px'}}>Acerca del evento</h2>
+                <h2 className="main-title fw-500 tx-dark" >Acerca del evento</h2>
               </div>
               <p data-aos="fade-up" style={{fontSize: '20px'}}>{portfolio.description}</p>
 

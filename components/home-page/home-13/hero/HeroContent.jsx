@@ -9,7 +9,7 @@ const HeroContent = () => {
           marca <img src="/images/shape/shape_114.svg" alt="img" />
         </span>{" "}.
       </h1>
-      <p className="sub-text mt-20 mb-45 lg-mb-30" style={{fontSize: '23px', fontWeight: 400}}>
+      <p className="sub-text mt-20 mb-45 lg-mb-30" >
       Creamos experiencias que reflejan
         <span className="text-white"> lo que tu marca tiene para contar.</span>
       </p>

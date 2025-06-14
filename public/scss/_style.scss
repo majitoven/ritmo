@@ -426,6 +426,7 @@ p {
   padding-bottom: 30px;
   color: rgba(0, 0, 0, 0.3);
 }
+
 .title-style-four .sc-title-two {
   font-size: 15px;
   letter-spacing: 3px;
@@ -6400,7 +6401,7 @@ body .btn-twentySix:hover:after {
   bottom: 0px;
 }
 .hero-banner-nine .sub-text {
-  font-size: 22px;
+  font-size: 23px;
   color: rgba(255, 255, 255, 0.7);
   line-height: 1.72em;
   letter-spacing: -0.5px;
@@ -6487,7 +6488,7 @@ body .btn-twentySix:hover:after {
 }
 /*^^^^^^^^^^^^^^^^^^^^^ Feedback Section Eight ^^^^^^^^^^^^^^^^^^^^^^^^*/
 .feedback-block-eight p {
-  font-size: 80px;
+  font-size: 65px;
   line-height: 1.23em;
   letter-spacing: -1px;
   padding: 0 50px;
@@ -10521,7 +10522,7 @@ body .btn-twentySix:hover:after {
     }
 
     .cmp-name {
-      font-size: 36px !important; /* Reduce title size */
+      font-size: 32px !important; /* Reduce title size */
       margin-bottom: 0px !important;
       text-align: center;
     }
@@ -10621,6 +10622,11 @@ body .btn-twentySix:hover:after {
 
 @media (max-width: 767px) {
   .contactanos-text {
-    font-size: 50px !important;
+    font-size: 35px !important;
   }
+
+  .consultas-txt {
+    font-size: 35px !important;
+  }
+  
 }
