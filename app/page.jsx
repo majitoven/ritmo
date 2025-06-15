@@ -4,20 +4,18 @@ import LeadGeneration from "./home/lead-generation/page";
 // En tu archivo app/layout.js o donde tengas el <head> principal, agregar:
 
 export const metadata = {
-  title: "Ritmo - Organización de Eventos Corporativos y Sociales en Uruguay",
-  description: "Expertos en organización de eventos corporativos, bodas y eventos sociales en Montevideo, Uruguay. Productora creativa con más de 10 años de experiencia creando experiencias únicas.",
-  keywords: "eventos corporativos Uruguay, organización eventos Montevideo, wedding planner Uruguay, eventos empresariales, productora eventos, bodas Uruguay, eventos sociales Montevideo, planificación eventos corporativos",
-  
-  // AGREGAR ESTA LÍNEA PARA GOOGLE SEARCH CONSOLE:
+  title: "Estudio Ritmo - Organización de Eventos Corporativos y Sociales en Uruguay",
+  description: "Expertos en organización de eventos corporativos y eventos sociales en Montevideo, Uruguay. Productora creativa con más de 5 años de experiencia creando experiencias únicas.",
+  keywords: "eventos corporativos Uruguay, organización eventos Montevideo, wedding planner Uruguay, eventos empresariales, productora eventos, Uruguay, eventos sociales Montevideo, planificación eventos corporativos",
+
   verification: {
-    google: "Vh-rjQ92oUSWZUrE" // El código que aparece en su pantalla
+    google: "Vh-rjQ92oUSWZUrE"
   },
 
-  // ... resto de tu metadata
   authors: [{ name: "Ritmo - Estudio de Eventos" }],
   creator: "Ritmo - Estudio de Eventos",
   publisher: "Ritmo - Estudio de Eventos",
-  
+
   openGraph: {
     title: "Ritmo - Organización de Eventos Corporativos y Sociales en Uruguay",
     description: "Expertos en organización de eventos corporativos, bodas y eventos sociales en Montevideo, Uruguay. Creamos experiencias únicas e inolvidables.",
@@ -25,7 +23,7 @@ export const metadata = {
     siteName: "Ritmo - Estudio de Eventos",
     images: [
       {
-        url: "/images/logo/ritmoPalabra.png", // O la imagen que tengas
+        url: "https://estudioritmo.com/images/logo/ritmoPalabra.png",
         width: 1200,
         height: 630,
         alt: "Ritmo - Organización de Eventos en Uruguay",
@@ -39,7 +37,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Ritmo - Organización de Eventos Corporativos en Uruguay",
     description: "Expertos en eventos corporativos, bodas y eventos sociales en Montevideo, Uruguay. Más de 10 años creando experiencias únicas.",
-    images: ["/images/logo/ritmoPalabra.png"],
+    images: ["https://estudioritmo.com/images/logo/ritmoPalabra.png"],
     creator: "@ritmo_uy",
   },
 
