@@ -42,62 +42,86 @@ const ProjectManagement = () => {
   }, []);
 
   // Image optimization (resize and compress)
-  const optimizeImage = async (file) => {
-    const maxSizeKB = 500; // Max size in KB
-    const maxDimension = 1200; // Max width or height
+// Image optimization (resize and compress) - VERSIÓN MEJORADA
+const optimizeImage = async (file) => {
+  const maxSizeKB = 1500; // Aumentado a 1.5MB para mejor calidad
+  const maxDimension = 1920; // Aumentado a 1920px para imágenes más nítidas
+  const jpegQuality = 0.92; // Aumentado a 92% para mejor calidad
 
-    const img = document.createElement("img");
-    const canvas = document.createElement("canvas");
-    const ctx = canvas.getContext("2d");
+  const img = document.createElement("img");
+  const canvas = document.createElement("canvas");
+  const ctx = canvas.getContext("2d");
 
-    const loadImage = () => {
-      return new Promise((resolve) => {
-        img.onload = () => resolve();
-        img.src = URL.createObjectURL(file);
-      });
-    };
-
-    await loadImage();
-
-    let width = img.width;
-    let height = img.height;
-
-    // Resize if dimensions exceed max
-    if (width > height) {
-      if (width > maxDimension) {
-        height = Math.round((height * maxDimension) / width);
-        width = maxDimension;
-      }
-    } else {
-      if (height > maxDimension) {
-        width = Math.round((width * maxDimension) / height);
-        height = maxDimension;
-      }
-    }
-
-    canvas.width = width;
-    canvas.height = height;
-    ctx.drawImage(img, 0, 0, width, height);
-
-    // Compress to JPEG with quality 0.8
+  const loadImage = () => {
     return new Promise((resolve) => {
-      canvas.toBlob(
-        (blob) => {
-          const sizeKB = blob.size / 1024;
-          if (sizeKB > maxSizeKB) {
-            alert(
-              "El archivo es demasiado grande incluso después de la compresión. Por favor, subí una imagen más pequeña."
-            );
-            resolve(null);
-          } else {
-            resolve(blob);
-          }
-        },
-        "image/jpeg",
-        0.8
-      );
+      img.onload = () => resolve();
+      img.src = URL.createObjectURL(file);
     });
   };
+
+  await loadImage();
+
+  let width = img.width;
+  let height = img.height;
+
+  // Resize if dimensions exceed max
+  if (width > height) {
+    if (width > maxDimension) {
+      height = Math.round((height * maxDimension) / width);
+      width = maxDimension;
+    }
+  } else {
+    if (height > maxDimension) {
+      width = Math.round((width * maxDimension) / height);
+      height = maxDimension;
+    }
+  }
+
+  canvas.width = width;
+  canvas.height = height;
+  
+  // Mejorar la calidad del renderizado
+  ctx.imageSmoothingEnabled = true;
+  ctx.imageSmoothingQuality = 'high';
+  ctx.drawImage(img, 0, 0, width, height);
+
+  // Intentar primero con calidad alta
+  return new Promise((resolve) => {
+    canvas.toBlob(
+      (blob) => {
+        const sizeKB = blob.size / 1024;
+        console.log(`Tamaño de imagen: ${sizeKB.toFixed(2)} KB`);
+        
+        if (sizeKB <= maxSizeKB) {
+          resolve(blob);
+        } else {
+          // Si es muy grande, intentar con menor calidad
+          canvas.toBlob(
+            (secondBlob) => {
+              const secondSizeKB = secondBlob.size / 1024;
+              console.log(`Tamaño de imagen (segunda compresión): ${secondSizeKB.toFixed(2)} KB`);
+              
+              if (secondSizeKB <= maxSizeKB) {
+                resolve(secondBlob);
+              } else {
+                alert(
+                  `La imagen es demasiado grande (${secondSizeKB.toFixed(2)} KB). ` +
+                  `El tamaño máximo permitido es ${maxSizeKB} KB. ` +
+                  `Por favor, sube una imagen más pequeña o con menor resolución.`
+                );
+                resolve(null);
+              }
+            },
+            "image/jpeg",
+            0.85 // Calidad de respaldo más baja
+          );
+        }
+      },
+      "image/jpeg",
+      jpegQuality // Calidad principal alta
+    );
+  });
+};
 
   // Handle image upload (for both main image and gallery)
   const handleImageUpload = async (file) => {
